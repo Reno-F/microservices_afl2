@@ -18,7 +18,6 @@ Route::get('/dashboard', [AuthController::class, 'dashboard'])->middleware('auth
 
 Route::post('/logout', [AuthController::class, 'logout']);
 
-// Route untuk fitur kalkulator
 Route::post('/calculator', function (Request $request) {
     $angka1 = $request->input('angka1');
     $angka2 = $request->input('angka2');
